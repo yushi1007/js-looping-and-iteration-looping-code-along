@@ -2,19 +2,27 @@
 // Code your solutions in this file
 function writeCards(array, event) {
     const thankYouCards = [];
-    let i = 0;
-    while (i < array.length) {
+    // let i = 0;
+    for (let i = 0; i < array.length; i++) {
     thankYouCards.push(`Thank you, ${array[i]}, for the wonderful ${event} gift!`);
-    i++;
     }
     return thankYouCards;
 }
 
+console.log(writeCards(["Ada", "Jamie"], "Surprise"))
+
+
 function countDown(number) {
-    for (let i = number; i >= 0; i--) {
-        console.log(i);
-    };
+    // let number = 0;
+    while (number >= 0) {
+        console.log(number);
+        number -= 1   
+    }
 }
+
+
+countDown(10)
+
 
 
 
